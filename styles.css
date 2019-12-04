@@ -1,0 +1,22 @@
+p {
+    color: #ff0000;
+    background: blue;
+    font-size: 3.0rem;
+}
+
+
+h1 {
+    color: green;
+}
+
+.special {
+    background: black;
+}
+
+.highlighted {
+    border: 3px solid purple;
+}
+
+.main {
+    border: 20px dashed black;
+}
