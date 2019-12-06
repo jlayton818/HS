@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="final.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <center>
-    <h1>Click On a State</h1>
-    <img src="https://images-na.ssl-images-amazon.com/images/I/81r8Hxz5lQL._SL1500_.jpg" alt="US_Map" width="1200">
+        <h1>Click On a State</h1>     
+    <center>
+        <right> 
+            <p>Score: 100 </p>
+        </right>
     </center>
-    <form action=""></form>
-    <button id="dc">US Capital</button>   
+        <img src="https://images-na.ssl-images-amazon.com/images/I/81r8Hxz5lQL._SL1500_.jpg" alt="US_Map" width="1200">
+    </center>
+
+<form name="caps">
+
+    
+    <button id="dc">US Capital</button>
+    <form id="DCCap" class="hide"></form>   
+    <input class="hide" type="text" id="textInput" placeholder="What is the capital?" />
+    <input class="hide" type="button" id="textInput"/>   
     <button id="al">Alabama</button>
     <button id="ak">Alaska</button>
     <button id="az">Arizona</button>
@@ -63,7 +76,10 @@
     <button id="wv">West Virginia</button>
     <button id="wi">Wisconsin</button>
     <button id="wy">Wyoming</button>
+</form>
 
+    <div class="answer_list" > WELCOME </div>
+<input class="hide" type="text" id="textInput" placeholder="What is the capital?" />
     
 
 </body>

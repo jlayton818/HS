@@ -1,3 +1,5 @@
+let form = document.getElementById("DCCap");
+
 function ready() {
 
 
@@ -27,6 +29,10 @@ function ready() {
     }
     dc.onclick = function() {
         console.log("Cap");
+        document.getElementById('textInput').className="show";
+        if (form.inputfield.value == document.getElementById("DCCap")) {
+            score = score + 100;
+        }
     }
     fl.onclick = function() {
         console.log("Gators");
@@ -153,8 +159,15 @@ function ready() {
     }
     wy.onclick = function() {
         console.log("wyoming");
-    }
+    }    
+}
+// function onButtonClick(){
+//     document.getElementById('textInput').className="show";
+//   } 
 
+let score = 0
+function Score(){
+    score++;
 }
 
 

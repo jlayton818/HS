@@ -1,0 +1,10 @@
+p {
+    text-align: right;
+}
+.hide{
+    display:none;
+  }
+.show{
+    display:block;
+}
+  
