@@ -22,17 +22,18 @@
         </h2>
     <center>
         <right> 
-            <p>Score: 100</p>
+            <p id="scoretext"></p>
         </right>
     </center>
         <img src="https://images-na.ssl-images-amazon.com/images/I/81r8Hxz5lQL._SL1500_.jpg" alt="US_Map" width="1200">
     </center>
 
-
+<right>
     <button id="dc">US Capital</button>
     <form name="uscap" id="DCCap">
         <textarea class="hide" name="uscapcheck" id="" cols="30" rows="10">Washington D.C.</textarea>
         <input class="hide" type="text" name="capital" id="textInput" placeholder="What is the capital of the US">
+        <button id="textInput" class="hide"> Submit</button>
     </form>
     <button id="textInput" id="" class="hide">Submit</button> 
     <button id="al">Alabama</button>
@@ -43,7 +44,7 @@
     <button id="ak">Alaska</button>
     <form name="akcap">
         <textarea class="hide" name="akcapcheck" id="" cols="30" rows="10">Juneau</textarea>
-        <input class="hide" type="text" name="akcapital" id="altextInput" placeholder="What is the capital of Alaska">
+        <input class="hide" type="text" name="akcapital" id="aktextInput" placeholder="What is the capital of Alaska">
     </form>
     <button id="az">Arizona</button>
     <form name="azcap">
@@ -114,7 +115,7 @@
     <button id="ks">Kansas</button>
     <form name="kscap">
         <textarea class="hide" name="kscapcheck" id="" cols="30" rows="10">Topeka</textarea>
-        <input class="hide" type="text" name="kacapital" id="katextInput" placeholder="What is the capital of Kansas">
+        <input class="hide" type="text" name="kacapital" id="kstextInput" placeholder="What is the capital of Kansas">
     </form>
     <button id="ky">Kentucky</button>
     <form name="kycap">
@@ -129,7 +130,7 @@
     <button id="me">Maine</button>
     <form name="mecap">
         <textarea class="hide" name="mecapcheck" id="" cols="30" rows="10">Augusta</textarea>
-        <input class="hide" type="text" name="macapital" id="matextInput" placeholder="What is the capital of Maine">
+        <input class="hide" type="text" name="mecapital" id="metextInput" placeholder="What is the capital of Maine">
     </form>
     <button id="md">Maryland</button>
     <form name="mdcap">
@@ -274,7 +275,7 @@
     <button id="wv">West Virginia</button>
     <form name="tncap">
         <textarea class="hide" name="wvcapcheck" id="" cols="30" rows="10">Charleston</textarea>
-        <input class="hide" type="text" name="wvcapital" id="tntextInput" placeholder="What is the capital of West Virginia">
+        <input class="hide" type="text" name="wvcapital" id="wvtextInput" placeholder="What is the capital of West Virginia">
     </form>
     <button id="wi">Wisconsin</button>
     <form name="wicap">
@@ -286,6 +287,7 @@
         <textarea class="hide" name="wycapcheck" id="" cols="30" rows="10">Cheyenne</textarea>
         <input class="hide" type="text" name="wycapital" id="wytextInput" placeholder="What is the capital of Wyoming">
     </form>
+    </right>
     
     <button id="sub" class="show" >Submit</button>
     
