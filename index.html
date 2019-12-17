@@ -8,33 +8,33 @@
     <title>Document</title>
 </head>
 
-<body>  
+<body>
+    
     <center>
-        <h2>Click On a State
             
-           
-        </h2>
-        <h2>
+            <h2 id="color">Click On a State
+            </h2>
+            <h2 id="color">
                 Then put the capital in the text box
-        </h2>     
-        <h2>
+            </h2>     
+            <h2 id="color">
                 Click the submit button to see if it is correct
-        </h2>
+            </h2>
+     
     <center>
-        <right> 
-            <p>Score: 100</p>
-        </right>
+        
     </center>
         <img src="https://images-na.ssl-images-amazon.com/images/I/81r8Hxz5lQL._SL1500_.jpg" alt="US_Map" width="1200">
+        <h3 id="scoretext">...<h3>
     </center>
-
+     
+    
 
     <button id="dc">US Capital</button>
     <form name="uscap" id="DCCap">
         <textarea class="hide" name="uscapcheck" id="" cols="30" rows="10">Washington D.C.</textarea>
         <input class="hide" type="text" name="capital" id="textInput" placeholder="What is the capital of the US">
     </form>
-    <button id="textInput" id="" class="hide">Submit</button> 
     <button id="al">Alabama</button>
     <form name="alcap">
             <textarea class="hide" name="alcapcheck" id="" cols="30" rows="10">Montgomery</textarea>
@@ -43,7 +43,7 @@
     <button id="ak">Alaska</button>
     <form name="akcap">
         <textarea class="hide" name="akcapcheck" id="" cols="30" rows="10">Juneau</textarea>
-        <input class="hide" type="text" name="akcapital" id="altextInput" placeholder="What is the capital of Alaska">
+        <input class="hide" type="text" name="akcapital" id="aktextInput" placeholder="What is the capital of Alaska">
     </form>
     <button id="az">Arizona</button>
     <form name="azcap">
@@ -107,14 +107,14 @@
         <input class="hide" type="text" name="INcapital" id="INtextInput" placeholder="What is the capital of Indiana">
     </form>
     <button id="ia">Iowa</button>
-    <form name="INcap">
+    <form name="iacap">
         <textarea class="hide" name="iacapcheck" id="" cols="30" rows="10">Des Moines</textarea>
         <input class="hide" type="text" name="iacapital" id="iatextInput" placeholder="What is the capital of Iowa">
     </form>
     <button id="ks">Kansas</button>
     <form name="kscap">
         <textarea class="hide" name="kscapcheck" id="" cols="30" rows="10">Topeka</textarea>
-        <input class="hide" type="text" name="kacapital" id="katextInput" placeholder="What is the capital of Kansas">
+        <input class="hide" type="text" name="kscapital" id="kstextInput" placeholder="What is the capital of Kansas">
     </form>
     <button id="ky">Kentucky</button>
     <form name="kycap">
@@ -129,7 +129,7 @@
     <button id="me">Maine</button>
     <form name="mecap">
         <textarea class="hide" name="mecapcheck" id="" cols="30" rows="10">Augusta</textarea>
-        <input class="hide" type="text" name="macapital" id="matextInput" placeholder="What is the capital of Maine">
+        <input class="hide" type="text" name="mecapital" id="metextInput" placeholder="What is the capital of Maine">
     </form>
     <button id="md">Maryland</button>
     <form name="mdcap">
@@ -272,9 +272,9 @@
         <input class="hide" type="text" name="wacapital" id="watextInput" placeholder="What is the capital of Washington">
     </form>
     <button id="wv">West Virginia</button>
-    <form name="tncap">
+    <form name="wvcap">
         <textarea class="hide" name="wvcapcheck" id="" cols="30" rows="10">Charleston</textarea>
-        <input class="hide" type="text" name="wvcapital" id="tntextInput" placeholder="What is the capital of West Virginia">
+        <input class="hide" type="text" name="wvcapital" id="wvtextInput" placeholder="What is the capital of West Virginia">
     </form>
     <button id="wi">Wisconsin</button>
     <form name="wicap">
@@ -287,7 +287,7 @@
         <input class="hide" type="text" name="wycapital" id="wytextInput" placeholder="What is the capital of Wyoming">
     </form>
     
-    <button id="sub" class="show" >Submit</button>
+    <button id="submit" class="show" >Submit</button>
     
 </body>
 <script src="final.js"></script>
