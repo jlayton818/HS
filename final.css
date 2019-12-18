@@ -1,6 +1,7 @@
 p {
     text-align: right;
 }
+/* used the classes in css to hide or show certain things */
 .hide{
     display:none;
   }
@@ -10,6 +11,6 @@ p {
 body {
     background-color: rgb(190, 190, 190);
 }
-h3 {
-    
+.button {
+    color: red;
 }

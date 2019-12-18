@@ -153,79 +153,324 @@ function ready() {
     let wycap = document.forms.wycap;   
     let wycapital = wycap.elements.capital;
     let capitalwy = wycap.elements.wycapcheck;
-
-
-
-    
-    // let akcapital = akcap.elements.capital;
-    // let capitalak = akcap.elements.akcapcheck;   
-    
-    // let akcapital = akcap.elements.capital;
-    // let capitalak = akcap.elements.akcapcheck;   
-    
-    // let akcapital = akcap.elements.capital;
-    // let capitalak = akcap.elements.akcapcheck;   
-    
-    // let akcapital = akcap.elements.capital;
-    // let capitalak = akcap.elements.akcapcheck;   
-    
-    // let akcapital = akcap.elements.capital;
-    // let capitalak = akcap.elements.akcapcheck;   
-
-    // color is one of the input in the favs form
-    // go.onclick = function() {  // go is a button on the page
-    //     if (capitalEl.value == capitalUS.value) {
-    //         console.log("hide id");
-    //         document.getElementById('textInput').className = "hide";
-    //     
-    //     } 
-    //     if (capitalEl.value !== capitalUS.value) {
-    //         console.log("submit button clicked");
-    //         capitalEl.value = "";
-    //         alert("The Capital is Washington D.C.");
-    //     }
-
-    //     alert("Please don't go!"); 
-    // }
     let x = 0
     submit.onclick = function() {
-        console.log("clicked")
-        if (capitalEl.value == capitalUS.value || capitalEl.value == "") {
-            console.log("hide id");
-            document.getElementById('textInput').className = "hide";
+        if (capitalEl.value == capitalUS.value) {
+            x = x + 1
+        }
+        if (capitalEl.value !== capitalUS.value) {
+            x = x - 1
+            console.log(capitalUS.value);
+        }
+        if (Alcapital.value == capitalAl.value) {
             x = x + 1;
-        } 
-        if (capitalEl.value !== capitalUS.value || capitalEl.value == "") {
-            console.log("submit button clicked");
-            capitalEl.value = "";
-            alert("The Capital is Washington D.C.");
+        }
+        if (Alcapital.value !== capitalAl.value) {
             x = x - 1;
         }
-        if (Alcapital.value == "Montgomery" || Alcapital.value == "") {
-            console.log("hide id");
-            document.getElementById('altextInput').className = "hide";
+        if (akcapital.value == capitalak.value) {
             x = x + 1;
-        } 
-        if (Alcapital.value !== "Montgomery" || Alcapital.value == "") {
-            console.log("submit button clicked");
-            Alcapital.value = "";
-            alert("The Capital is Montgomery");
         }
-        if (akcapital.value == "Juneau" || akcapital.value == "" ) {
-            console.log("hide id");
-            document.getElementById('aktextInput').className = "hide";
-            akcapital.value = "";
-        } 
-        if (akcapital.value !== "Juneau" || akcapital.value == "") {
-            console.log("submit button clicked");
-            document.getElementById('aktextInput').className = "hide";
-            akcapital.value = "";
-            alert("The Capital is Juneau");
+        if (akcapital.value !== capitalak.value) {
+            x = x - 1;
         }
-        scoretext.innerHTML = "<h3>Score:" + y + "</h3>";
-        scoretext.append("work");
-        console.log("work");
-        x++
+        // if (azcapital.value == capitalaz.value) {
+        //     x = x + 1;
+        // }
+        // if (azcapital.value !== capitalaz.value) {
+        //     x = x - 1;
+        // }
+        // if (arcapital.value == capitalar.value) {
+        //     x = x + 1;
+        // }
+        // if (arcapital.value !== capitalar.value) {
+        //     x = x - 1;
+        // }
+        // if (cacapital.value == capitalca.value) {
+        //     x = x + 1;
+        // }
+        // if (cacapital.value !== capitalca.value) {
+        //     x = x - 1;
+        // }
+        if (cocapital.value == capitalco.value) {
+            x = x + 1;
+        }
+        if (cocapital.value !== capitalco.value) {
+            x = x - 1;
+        }
+        if (ctcapital.value == capitalct.value) {
+            x = x + 1;
+        }
+        if (ctcapital.value !== capitalct.value) {
+            x = x - 1;
+        }
+        if (decapital.value == capitalde.value) {
+            x = x + 1;
+        }
+        if (decapital.value !== capitalde.value) {
+            x = x - 1;
+        }
+        if (flcapital.value == capitalfl.value) {
+            x = x + 1;
+        }
+        if (flcapital.value !== capitalfl.value) {
+            x = x - 1;
+        }
+        if (gacapital.value == capitalga.value) {
+            x = x + 1;
+        }
+        if (gacapital.value !== capitalga.value) {
+            x = x - 1;
+        } 
+        if (hicapital.value == capitalhi.value) {
+            x = x + 1;
+        }
+        if (hicapital.value !== capitalhi.value) {
+            x = x - 1;
+        }
+        if (idcapital.value == capitalid.value) {
+            x = x + 1;
+        }
+        if (idcapital.value !== capitalid.value) {
+            x = x - 1;
+        }
+        if (ilcapital.value == capitalil.value) {
+            x = x + 1;
+        }
+        if (ilcapital.value !== capitalil.value) {
+            x = x - 1;
+        }
+        if (incapital.value == capitalin.value) {
+            x = x + 1;
+        }
+        if (incapital.value !== capitalin.value) {
+            x = x - 1;
+        }
+        if (iacapital.value == capitalia.value) {
+            x = x + 1;
+        }
+        if (iacapital.value !== capitalia.value) {
+            x = x - 1;
+        }
+        if (kscapital.value == capitalks.value) {
+            x = x + 1;
+        }
+        if (kscapital.value !== capitalks.value) {
+            x = x - 1;
+        }
+        if (kycapital.value == capitalky.value) {
+            x = x + 1;
+        }
+        if (kycapital.value !== capitalky.value) {
+            x = x - 1;
+        }
+        if (lacapital.value == capitalla.value) {
+            x = x + 1;
+        }
+        if (lacapital.value !== capitalla.value) {
+            x = x - 1;
+        }
+        if (mecapital.value == capitalme.value) {
+            x = x + 1;
+        }
+        if (mecapital.value !== capitalme.value) {
+            x = x - 1;
+        }
+        if (mdcapital.value == capitalmd.value) {
+            x = x + 1;
+        }
+        if (mdcapital.value !== capitalmd.value) {
+            x = x - 1;
+        }
+        if (macapital.value == capitalma.value) {
+            x = x + 1;
+        }
+        if (macapital.value !== capitalma.value) {
+            x = x - 1;
+        }
+        if (micapital.value == capitalmi.value) {
+            x = x + 1;
+        }
+        if (micapital.value !== capitalmi.value) {
+            x = x - 1;
+        }
+        if (mncapital.value == capitalmn.value) {
+            x = x + 1;
+        }
+        if (mncapital.value !== capitalmn.value) {
+            x = x - 1;
+        }
+        if (mscapital.value == capitalms.value) {
+            x = x + 1;
+        }
+        if (mscapital.value !== capitalms.value) {
+            x = x - 1;
+        }
+        if (mocapital.value == capitalmo.value) {
+            x = x + 1;
+        }
+        if (mocapital.value !== capitalmo.value) {
+            x = x - 1;
+        }
+        if (mtcapital.value == capitalmt.value) {
+            x = x + 1;
+        }
+        if (mtcapital.value !== capitalmt.value) {
+            x = x - 1;
+        }
+        if (necapital.value == capitalne.value) {
+            x = x + 1;
+        }
+        if (necapital.value !== capitalne.value) {
+            x = x - 1;
+        }
+        if (nvcapital.value == capitalnv.value) {
+            x = x + 1;
+        }
+        if (nvcapital.value !== capitalnv.value) {
+            x = x - 1;
+        }
+        if (nhcapital.value == capitalnh.value) {
+            x = x + 1;
+        }
+        if (nhcapital.value !== capitalnh.value) {
+            x = x - 1;
+        }
+        if (njcapital.value == capitalnj.value) {
+            x = x + 1;
+        }
+        if (njcapital.value !== capitalnj.value) {
+            x = x - 1;
+        }
+        if (nmcapital.value == capitalnm.value) {
+            x = x + 1;
+        }
+        if (nmcapital.value !== capitalnm.value) {
+            x = x - 1;
+        }
+        if (nycapital.value == capitalny.value) {
+            x = x + 1;
+        }
+        if (nycapital.value !== capitalny.value) {
+            x = x - 1;
+        }
+        if (nccapital.value == capitalnc.value) {
+            x = x + 1;
+        }
+        if (nccapital.value !== capitalnc.value) {
+            x = x - 1;
+        }
+        if (ndcapital.value == capitalnd.value) {
+            x = x + 1;
+        }
+        if (ndcapital.value !== capitalnd.value) {
+            x = x - 1;
+        }
+        if (ohcapital.value == capitaloh.value) {
+            x = x + 1;
+        }
+        if (ohcapital.value !== capitaloh.value) {
+            x = x - 1;
+        }
+        if (okcapital.value == capitalok.value) {
+            x = x + 1;
+        }
+        if (okcapital.value !== capitalok.value) {
+            x = x - 1;
+        }
+        if (orcapital.value == capitalor.value) {
+            x = x + 1;
+        }
+        if (orcapital.value !== capitalor.value) {
+            x = x - 1;
+        }
+        if (pacapital.value == capitalpa.value) {
+            x = x + 1;
+        }
+        if (pacapital.value !== capitalpa.value) {
+            x = x - 1;
+        }
+        if (ricapital.value == capitalri.value) {
+            x = x + 1;
+        }
+        if (ricapital.value !== capitalri.value) {
+            x = x - 1;
+        }
+        if (sccapital.value == capitalsc.value) {
+            x = x + 1;
+        }
+        if (sccapital.value !== capitalsc.value) {
+            x = x - 1;
+        }
+        if (sdcapital.value == capitalsd.value) {
+            x = x + 1;
+        }
+        if (sdcapital.value !== capitalsd.value) {
+            x = x - 1;
+        }
+        if (tncapital.value == capitaltn.value) {
+            x = x + 1;
+        }
+        if (tncapital.value !== capitaltn.value) {
+            x = x - 1;
+        }
+        if (txcapital.value == capitaltx.value) {
+            x = x + 1;
+        }
+        if (txcapital.value !== capitaltx.value) {
+            x = x - 1;
+        }
+        if (utcapital.value == capitalut.value) {
+            x = x + 1;
+        }
+        if (utcapital.value !== capitalut.value) {
+            x = x - 1;
+        }
+        if (vtcapital.value == capitalvt.value) {
+            x = x + 1;
+        }
+        if (vtcapital.value !== capitalvt.value) {
+            x = x - 1;
+        }
+        if (vacapital.value == capitalva.value) {
+            x = x + 1;
+        }
+        if (vacapital.value !== capitalva.value) {
+            x = x - 1;
+        }
+        if (wacapital.value == capitalwa.value) {
+            x = x + 1;
+        }
+        if (wacapital.value !== capitalwa.value) {
+            x = x - 1;
+        }
+        if (wvcapital.value == capitalwv.value) {
+            x = x + 1;
+        }
+        if (wvcapital.value !== capitalwv.value) {
+            x = x - 1;
+        }
+        if (wicapital.value == capitalwi.value) {
+            x = x + 1;
+        }
+        if (wicapital.value !== capitalwi.value) {
+            x = x - 1;
+        }
+        if (wycapital.value == capitalwy.value) {
+            x = x + 1;
+        }
+        if (wycapital.value !== capitalwy.value) {
+            x = x - 1;
+        }
+
+        
+
+
+        console.log(x);
+        x++;
+        x = x / 2
+        scoretext.innerHTML = "<h3>Score: " + x + "</h3>";
+        
     }
         
        
