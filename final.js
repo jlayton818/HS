@@ -174,24 +174,24 @@ function ready() {
         if (akcapital.value !== capitalak.value) {
             x = x - 1;
         }
-        // if (azcapital.value == capitalaz.value) {
-        //     x = x + 1;
-        // }
-        // if (azcapital.value !== capitalaz.value) {
-        //     x = x - 1;
-        // }
-        // if (arcapital.value == capitalar.value) {
-        //     x = x + 1;
-        // }
-        // if (arcapital.value !== capitalar.value) {
-        //     x = x - 1;
-        // }
-        // if (cacapital.value == capitalca.value) {
-        //     x = x + 1;
-        // }
-        // if (cacapital.value !== capitalca.value) {
-        //     x = x - 1;
-        // }
+        if (azcapital.value == capitalaz.value) {
+            x = x + 1;
+        }
+        if (azcapital.value !== capitalaz.value) {
+            x = x - 1;
+        }
+        if (arcapital.value == capitalar.value) {
+            x = x + 1;
+        }
+        if (arcapital.value !== capitalar.value) {
+            x = x - 1;
+        }
+        if (cacapital.value == capitalca.value) {
+            x = x + 1;
+        }
+        if (cacapital.value !== capitalca.value) {
+            x = x - 1;
+        }
         if (cocapital.value == capitalco.value) {
             x = x + 1;
         }
